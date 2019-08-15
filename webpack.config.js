@@ -8,6 +8,8 @@ module.exports = {
         filename: 'bundle.js'
     },
     plugins: [
-        new HtmlWebpackPlugin()
+        new HtmlWebpackPlugin({
+            template: 'src/index.ejs'
+        })
     ]
 };
