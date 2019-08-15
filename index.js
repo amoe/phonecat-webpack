@@ -1,13 +1,11 @@
 import angular from 'angular';
-import phoneListTemplate from './phone-list.tmpl.html';
-
 // phonecat.js -- angularjs application
 
 // declare the application
 const phonecatApplication = angular.module('phonecatApplication', []);
 
 phonecatApplication.component('phoneList', {
-    template: phoneListTemplate,
+    templateUrl: 'phone-list.tmpl',
     controller() {
         this.phones = [{'name': 'Motorola Timeport'}];
     }
