@@ -13,8 +13,6 @@ phonecatApplication.component('phoneList', {
     }
 });
 
-
-
 function onReady(e) {
     console.log("document is ready");
 }
