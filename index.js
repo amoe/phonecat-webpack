@@ -9,10 +9,14 @@ phonecatApplication.component('phoneList', {
     controller() {
         this.phones = [
             {'name': 'Motorola Timeport',
-             'snippet': "Alan's current phone"},
+             'snippet': "Alan's current phone",
+             'age': 20},
             {'name': 'Nokia 3310',
-             'snippet': "A timeless classic"},
+             'snippet': "A timeless classic",
+             'age': 19},
         ];
+
+        this.orderProp = 'age';
     }
 });
 
