@@ -1,4 +1,15 @@
 <!-- -*- web -*- -->
+<p>Sort by:</p>
+
+<select ng-model="$ctrl.orderProp">
+  <option value="name">Alphabetical</option>
+  <option value="age">Newest</option>
+</select>
+
 <ul>
-  <li ng-repeat="phone in $ctrl.phones">{{phone.name}} -- {{phone.snippet}}</li>
+  <li ng-repeat="phone in $ctrl.phones | orderBy:$ctrl.orderProp">
+    <phone-item item="phone" blurb="$ctrl.blurb">
+  </li>
 </ul>
+
+<button ng-click="$ctrl.modifyBlurb()">Modify blurb</button>
