@@ -2,3 +2,13 @@
 <ul>
   <li ng-repeat="phone in $ctrl.phones">{{phone.name}} -- {{phone.snippet}}</li>
 </ul>
+
+<button ng-click="$ctrl.add()">foo</button>
+
+<div ng-if="$ctrl.someBool" class="fade">
+  Fade me in out
+  <input type="text">
+</div>
+
+<button ng-click="$ctrl.flip()">Fade In!</button>
+<button ng-click="$ctrl.flip()">Fade Out!</button>
